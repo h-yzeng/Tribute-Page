@@ -6,7 +6,6 @@ body {
   background-color: #f4f4f4;
 }
 
-/* Main Container */
 #main {
   max-width: 800px;
   margin: 0 auto;
@@ -14,40 +13,36 @@ body {
   background-color: #fff;
 }
 
-/* Title Styles */
 #title {
   text-align: center;
   color: #333;
   margin-bottom: 30px;
 }
 
-/* Image Division Styles */
 #img-div {
-  text-align: center; 
-  margin-bottom: 30px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-/* Image Styles */
 #image {
-  max-width: 100%; 
-  height: auto;     
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
-/* Image Caption Styles */
 #img-caption {
   margin-top: 10px;
   font-style: italic;
   color: #666;
 }
 
-/* Tribute Information Styles */
 #tribute-info {
   line-height: 1.6;
   color: #333;
   text-align: justify;
 }
 
-/* Tribute Link Styles */
 #tribute-link {
   display: block;
   text-align: center;
@@ -61,3 +56,21 @@ body {
   text-decoration: underline;
 }
 
+#footer {
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+#footer a {
+  color: #0066cc;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
