@@ -6,8 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tribute to the Internet Revolution</title>
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome for Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
   <body>
+    <!-- Sticky Navigation Bar -->
+    <nav id="navbar">
+      <a href="#main">Home</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#contact-form">Contact</a>
+    </nav>
+
     <!-- Main Container -->
     <main id="main">
       <!-- Title -->
@@ -17,7 +26,7 @@
       <div id="img-div">
         <img id="image" src="images/network.png" alt="Internet of Things">
         <div id="img-caption">An illustration of Internet of Things devices in use today</div>
-      </div>      
+      </div>
 
       <!-- Tribute Information -->
       <div id="tribute-info">
@@ -27,23 +36,72 @@
         </p>
       </div>
 
+      <!-- Expanded Timeline Section -->
+      <div id="timeline">
+        <h3>The Internet Revolution: Key Milestones</h3>
+        <ul>
+          <li><strong>1969:</strong> The first ARPANET message was sent between UCLA and Stanford, marking the birth of the internet.</li>
+          <li><strong>1983:</strong> ARPANET adopted the TCP/IP protocol, which still serves as the foundation of the internet today.</li>
+          <li><strong>1989:</strong> Tim Berners-Lee invented the World Wide Web, creating the first web browser and server.</li>
+          <li><strong>1998:</strong> Google was founded, revolutionizing search on the internet.</li>
+          <li><strong>2004:</strong> Facebook launched, bringing social networking into the mainstream.</li>
+          <li><strong>2007:</strong> The release of the iPhone changed how we interact with the internet, ushering in the mobile revolution.</li>
+        </ul>
+      </div>
+
       <!-- Tribute Link -->
-      <p>If you want to learn more, you can click here to learn more about the</p>
-      <a id="tribute-link" href="https://www.internetsociety.org/internet/history-internet/brief-history-internet/" target="_blank">
-        History of the Internet
-      </a>
+      <div id="tribute-background">
+        <p>If you want to learn more, you can click here to learn more about the 
+          <a id="tribute-link" href="https://www.internetsociety.org/internet/history-internet/brief-history-internet/" target="_blank">
+            History of the Internet
+          </a>.
+        </p>      
+      </div>
     </main>
+
+    <!-- Contact Form Section -->
+    <div id="contact-form">
+      <h3>Contact Me</h3>
+      <form>
+        <!-- Full Name Fields -->
+        <div class="name-fields">
+          <div>
+            <label for="first-name">First Name<span class="required">*</span></label>
+            <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+          </div>
+          <div>
+            <label for="last-name">Last Name<span class="required">*</span></label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+          </div>
+        </div>
+
+        <!-- Email Field -->
+        <label for="email">E-mail<span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+
+        <!-- Message Field -->
+        <label for="message">Message<span class="required">*</span></label>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Send">
+      </form>
+    </div>
 
     <!-- Footer Section -->
     <footer id="footer">
       <p>&copy; 2024 Henry Zeng</p>
       <p>
-        <a href="#main">Back to Top</a> | 
+        <a href="#main">Back to Top</a> |
         <a href="mailto:thyzeng@gmail.com">Contact Me</a>
       </p>
       <p>
         References: <a href="https://www.internetsociety.org/" target="_blank">Internet Society</a>, 
         <a href="https://www.webfoundation.org/" target="_blank">Web Foundation</a>
+      </p>
+      <p>
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
       </p>
     </footer>
   </body>
